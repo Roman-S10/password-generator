@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    background: #fafafa;
+    color: #272727;
+    font-size: 26px;
+}
+
+header{
+    min-height: 64px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+}
+
+input[type="checkbox"]{
+    display:none;            
+}
+input[type="checkbox"] + label{
+    cursor: pointer;
+}
+
+.password-options{
+    width: 300px;
+    padding: 25px 0 25px 0;
+    margin: 0 auto;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 7px;
+}
+
+input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px 0 0;
+    background: #eeeeee;
+    border: 2px solid #6d6d6d;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+input[type="checkbox"] + label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    display: inline-block;
+    height: 13px;
+    width: 6px;
+    margin: 0 5px 0 0;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + label::before {
+    background: #106cc8;
+    border: 2px solid transparent;
+}
+
+input[type="checkbox"]:checked + label::after{
+    border-bottom: 2px solid #e2eae9;
+    border-right: 2px solid #e2eae9;
+}
+input[type="checkbox"]:disabled + label::before {
+    background: #222222;
+}
+input[type="checkbox"]:checked:disabled + label::before {
+    background: #4j44jj;
+}
+
+.btn{
+    display: inline-block;
+    width: 100%;
+    padding: 6px 0 6px 0;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    background: rgb(16,108,200);
+    font-size: 20px;
+    transition: all .3s;
+}
+
+.btn:hover{
+    background: #0159a2;
+}
+
+input[type="text"]{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #b8b8b8;
+    background: transparent;
+    transition: all .3s;
+    font-size: 20px;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    border-bottom: 2px solid #0159a2;
+}
+
+#password{
+    text-align: center;
+}
+
+#password p{
+    margin-bottom: 20px;
+}

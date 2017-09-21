@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passwords generator</title>
+    <link rel="stylesheet" href="mine.css">
+</head>
+<body>
+    <header></header>
+    <div class="content">
+        <form name="pass_options" class="password-options">
+            <div class="form-group">
+                <input id="nums" name="nums" type="checkbox" checked>
+                <label for="nums">Цифры</label>
+            </div>
+            <div class="form-group">
+                <input id="lowercase" name="lowercase" type="checkbox" checked>
+                <label for="lowercase">Строчные буквы</label>
+            </div>
+            <div class="form-group">
+                <input id="uppercase" name="uppercase" type="checkbox" checked>
+                <label for="uppercase">Прописные буквы</label>
+            </div>
+            <div class="form-group">
+                <input id="symbols" name="symbols" type="checkbox">
+                <label for="symbols">Спец. символы</label>
+            </div>
+            <div class="form-group">
+                <label for="pass_length">Количество символов</label>
+                <input id="pass_length" name="pass_length" type="text" value="8">
+            </div>
+            <a class="btn" href="#" id="create">Создать</a>
+        </form>
+        <div id="password"></div>
+    </div>
+    <script src="mine.js"></script>
+</body>
+</html>
